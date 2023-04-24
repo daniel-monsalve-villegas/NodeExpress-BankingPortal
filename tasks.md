@@ -4,13 +4,13 @@
 
 Run the following command from root folder of the cloned project to install all dependencies.
 
-`npm install`
+- [x] `npm install`]
 
 ## Verify Setup
 
 In order to verify that everything is setup correctly, run the following command, which should show you the failing tests. This is good! We'll be fixing these tests once we jump into the build step.
 
-`npm run test`
+- [x] `npm run test`]
 
 Every time you want to check your work locally you can type that command, and it will report the status of every task in that module.
 As you move through the modules, you can run module-specific tests with the script `npm run test:module1`, replacing the number with one that corresponds with the module you are working in.
@@ -23,45 +23,45 @@ In order to see your changes in a browser, you can run `npm start` to start the 
 
 ## 1.1 - Require Built-in Libraries
 
-@app-require-built-ins In `app.js` require the built-in library `fs` and store a reference to it in a `const` called `fs`. Next, require the built-in library `path` and store a reference to it in a `const` called `path`.
+- [x] @app-require-built-ins In `app.js` require the built-in library `fs` and store a reference to it in a `const` called `fs`. Next, require the built-in library `path` and store a reference to it in a `const` called `path`.
 
 ## 1.2 - Require the Express Framework
 
-@app-require-express-const-app In `app.js`, require the express framework and store a reference to it in a `const` called `express`. Next, call the express function and store it in a `const` called `app`.
+- [x] @app-require-express-const-app In `app.js`, require the express framework and store a reference to it in a `const` called `express`. Next, call the express function and store it in a `const` called `app`.
 
 ## 1.3 - Configure the View Directory and Engine
 
-@app-set-views-directory-engine Still in app.js, use the `set` function of your newly created `app` to configure the directory where our `views` can be found. Using the same `set` function, set the `view engine` to `ejs`. **Hint: `path.join()` & `__dirname`**
+- [x] @app-set-views-directory-engine Still in app.js, use the `set` function of your newly created `app` to configure the directory where our `views` can be found. Using the same `set` function, set the `view engine` to `ejs`. **Hint: `path.join()` & `__dirname`**
 
 ## 1.4 - Configure the Static Directory
 
-@app-use-express-static All of our CSS/JS for the client-side is found in the `public` directory. We need to point express to `public`.
+- [ ] @app-use-express-static All of our CSS/JS for the client-side is found in the `public` directory. We need to point express to `public`.
 
-- In app.js call the `use` function of `app` with a call to the `express.static()` function as the only parameter.
-- `express.static()` should be passed the full path to the `public` directory. **Hint: `path.join()` & `__dirname`**
+- [ ] In app.js call the `use` function of `app` with a call to the `express.static()` function as the only parameter.
+- [ ] `express.static()` should be passed the full path to the `public` directory. **Hint: `path.join()` & `__dirname`**
 
 ## 1.5 - Create the Index View File
 
-@index-ejs-create-view-file Create a new file called `index.ejs` in the `src/views/` directory.
+- [ ] @index-ejs-create-view-file Create a new file called `index.ejs` in the `src/views/` directory.
 
 ## 1.6 - Create the Index View
 
-@index-ejs-create-view In the newly created file `index.ejs` complete the following:
+- [ ] @index-ejs-create-view In the newly created file `index.ejs` complete the following:
 
-- Include `header.ejs` **Hint: <%- %>**
-- Add a `div` element with a class of `container`.
-- In the container div display the value of the `title` key in an `h1` element. **Hint: <%= %>**
-- Add an anchor element below the `h1` that points to the `/profile` URL path, and has the text content `Profile`.
-- Below the container div add a line break and another anchor element that points to the `/transfer` URL path with the text content `Transfer`.
-- Include `footer.ejs` **Hint: <%- %>**
+- [ ] Include `header.ejs` **Hint: <%- %>**
+- [ ] Add a `div` element with a class of `container`.
+- [ ] In the container div display the value of the `title` key in an `h1` element. **Hint: <%= %>**
+- [ ] Add an anchor element below the `h1` that points to the `/profile` URL path, and has the text content `Profile`.
+- [ ] Below the container div add a line break and another anchor element that points to the `/transfer` URL path with the text content `Transfer`.
+- [ ] Include `footer.ejs` **Hint: <%- %>**
 
 ## 1.7 - Create the Index Route
 
-@app-get-index-route In `app.js` create a `get` route that points at the root URL path '/'. Render the `index` view (created in the next step) and pass an object with a single key value pair, `title: 'Index'`.
+- [ ] @app-get-index-route In `app.js` create a `get` route that points at the root URL path '/'. Render the `index` view (created in the next step) and pass an object with a single key value pair, `title: 'Index'`.
 
 ## 1.8 - Start Server
 
-@app-listen-console-log In `app.js` using the `listen` function to create a server that listens on port `3000` and then prints the message `PS Project Running on port 3000!` to the console after the server is created.
+- [ ] @app-listen-console-log In `app.js` using the `listen` function to create a server that listens on port `3000` and then prints the message `PS Project Running on port 3000!` to the console after the server is created.
 
 # Module 02 - File Handling and Routing
 
