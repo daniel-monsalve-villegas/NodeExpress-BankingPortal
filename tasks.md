@@ -57,53 +57,52 @@ In order to see your changes in a browser, you can run `npm start` to start the 
 
 ## 1.7 - Create the Index Route
 
-- [ ] @app-get-index-route In `app.js` create a `get` route that points at the root URL path '/'. Render the `index` view (created in the next step) and pass an object with a single key value pair, `title: 'Index'`.
-
+- [x] @app-get-index-route In `app.js` create a `get` route that points at the root URL path '/'. Render the `index` view (created in the next step) and pass an object with a single key value pair, `title: 'Index'`.
 ## 1.8 - Start Server
 
-- [ ] @app-listen-console-log In `app.js` using the `listen` function to create a server that listens on port `3000` and then prints the message `PS Project Running on port 3000!` to the console after the server is created.
+- [x] @app-listen-console-log In `app.js` using the `listen` function to create a server that listens on port `3000` and then prints the message `PS Project Running on port 3000!` to the console after the server is created.
 
 # Module 02 - File Handling and Routing
 
 ## 2.1 - Read Account Data
 
-@app-read-account-data In `app.js` above the index route, use the `readFileSync` function of the built-in `fs` library to read the contents of the file located at `src/json/accounts.json`. Declare a `const` called `accountData` to store the contents of the file. `accountData` now contains JSON, use `JSON.parse` to convert it to a javascript object. Declare a `const` called `accounts` to store this javascript object. **Note: read the file with the `UTF8` encoding.**
+- [ ] @app-read-account-data In `app.js` above the index route, use the `readFileSync` function of the built-in `fs` library to read the contents of the file located at `src/json/accounts.json`. Declare a `const` called `accountData` to store the contents of the file. `accountData` now contains JSON, use `JSON.parse` to convert it to a javascript object. Declare a `const` called `accounts` to store this javascript object. **Note: read the file with the `UTF8` encoding.**
 
 ## 2.2 - Read User Data
 
-@app-read-user-data In `app.js` near the index route, use the `readFileSync` function of the built-in `fs` library to read the contents of the file located at `src/json/users.json`. Declare a `const` called `userData` to store the contents of the file. `userData` now contains JSON, use `JSON.parse` to convert it to a javascript object. Declare a `const` called `users` to store this javascript object. **Note: read the file with the `UTF8` encoding.**
+- [ ] @app-read-user-data In `app.js` near the index route, use the `readFileSync` function of the built-in `fs` library to read the contents of the file located at `src/json/users.json`. Declare a `const` called `userData` to store the contents of the file. `userData` now contains JSON, use `JSON.parse` to convert it to a javascript object. Declare a `const` called `users` to store this javascript object. **Note: read the file with the `UTF8` encoding.**
 
 ## 2.3 - Update the Index Route
 
-@app-update-index-route In `app.js` update the object passed to the existing index route. The `title` should be `Account Summary`. A new key value pair should be added, `accounts: accounts`.
+- [ ] @app-update-index-route In `app.js` update the object passed to the existing index route. The `title` should be `Account Summary`. A new key value pair should be added, `accounts: accounts`.
 
 ## 2.4 - Update the Index View
 
-@index-ejs-update-view In `index.ejs` and after the container div, add the ejs markup to include the `summary` view for each account in the `accounts` variable, savings, checking, and credit. **Hint: you will have three include statements(`<%- %>`), each `include` function will be passed a different account, i.e `{ account: accounts.checking }`.**
+- [ ] @index-ejs-update-view In `index.ejs` and after the container div, add the ejs markup to include the `summary` view for each account in the `accounts` variable, savings, checking, and credit. **Hint: you will have three include statements(`<%- %>`), each `include` function will be passed a different account, i.e `{ account: accounts.checking }`.**
 
 ## 2.5 - Create the Savings Account Route
 
-@app-get-savings-account-route In `app.js` near the index route, create a `get` route that points at the `/savings` URL path. Render the `account` view and pass an object with the following key value pair:
+- [ ] @app-get-savings-account-route In `app.js` near the index route, create a `get` route that points at the `/savings` URL path. Render the `account` view and pass an object with the following key value pair:
 
 - `account: accounts.savings`
 
 ## 2.6 - Create the Checking & Credit Routes
 
-@app-get-other-account-routes Now that you have created the savings account route, create similar routes for the checking and credit accounts in the `app.js` file.
+- [ ] @app-get-other-account-routes Now that you have created the savings account route, create similar routes for the checking and credit accounts in the `app.js` file.
 
 ## 2.7 - Show Account Transactions
 
-@account-ejs-show-transactions In `account.ejs` after the header markup, add the ejs markup to include the `transactions` view. Pass the include function an object with the following key value pair:
+- [ ] @account-ejs-show-transactions In `account.ejs` after the header markup, add the ejs markup to include the `transactions` view. Pass the include function an object with the following key value pair:
 
 - `account: account`
 
 ## 2.8 - Create the Profile View File
 
-@profile-ejs-create-view-file Create a new file called `profile.ejs` in the `src/views/` directory.
+- [ ] @profile-ejs-create-view-file Create a new file called `profile.ejs` in the `src/views/` directory.
 
 ## 2.9 - Create the Profile View
 
-@profile-ejs-create-view In the newly created file `profile.ejs` complete the following:
+- [ ] @profile-ejs-create-view In the newly created file `profile.ejs` complete the following:
 
 - Include `header.ejs` **Hint: <%- %>**
 - Add an `h1` element with the text content `Profile`
