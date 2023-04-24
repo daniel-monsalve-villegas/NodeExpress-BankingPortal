@@ -42,7 +42,7 @@ In order to see your changes in a browser, you can run `npm start` to start the 
 
 ## 1.5 - Create the Index View File
 
-- [ ] @index-ejs-create-view-file Create a new file called `index.ejs` in the `src/views/` directory.
+- [x] @index-ejs-create-view-file Create a new file called `index.ejs` in the `src/views/` directory.
 
 ## 1.6 - Create the Index View
 
