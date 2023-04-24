@@ -66,15 +66,15 @@ In order to see your changes in a browser, you can run `npm start` to start the 
 
 ## 2.1 - Read Account Data
 
-- [ ] @app-read-account-data In `app.js` above the index route, use the `readFileSync` function of the built-in `fs` library to read the contents of the file located at `src/json/accounts.json`. Declare a `const` called `accountData` to store the contents of the file. `accountData` now contains JSON, use `JSON.parse` to convert it to a javascript object. Declare a `const` called `accounts` to store this javascript object. **Note: read the file with the `UTF8` encoding.**
+- [x] @app-read-account-data In `app.js` above the index route, use the `readFileSync` function of the built-in `fs` library to read the contents of the file located at `src/json/accounts.json`. Declare a `const` called `accountData` to store the contents of the file. `accountData` now contains JSON, use `JSON.parse` to convert it to a javascript object. Declare a `const` called `accounts` to store this javascript object. **Note: read the file with the `UTF8` encoding.**
 
 ## 2.2 - Read User Data
 
-- [ ] @app-read-user-data In `app.js` near the index route, use the `readFileSync` function of the built-in `fs` library to read the contents of the file located at `src/json/users.json`. Declare a `const` called `userData` to store the contents of the file. `userData` now contains JSON, use `JSON.parse` to convert it to a javascript object. Declare a `const` called `users` to store this javascript object. **Note: read the file with the `UTF8` encoding.**
+- [x] @app-read-user-data In `app.js` near the index route, use the `readFileSync` function of the built-in `fs` library to read the contents of the file located at `src/json/users.json`. Declare a `const` called `userData` to store the contents of the file. `userData` now contains JSON, use `JSON.parse` to convert it to a javascript object. Declare a `const` called `users` to store this javascript object. **Note: read the file with the `UTF8` encoding.**
 
 ## 2.3 - Update the Index Route
 
-- [ ] @app-update-index-route In `app.js` update the object passed to the existing index route. The `title` should be `Account Summary`. A new key value pair should be added, `accounts: accounts`.
+- [x] @app-update-index-route In `app.js` update the object passed to the existing index route. The `title` should be `Account Summary`. A new key value pair should be added, `accounts: accounts`.
 
 ## 2.4 - Update the Index View
 
