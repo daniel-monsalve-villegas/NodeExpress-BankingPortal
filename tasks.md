@@ -46,14 +46,14 @@ In order to see your changes in a browser, you can run `npm start` to start the 
 
 ## 1.6 - Create the Index View
 
-- [ ] @index-ejs-create-view In the newly created file `index.ejs` complete the following:
+@index-ejs-create-view In the newly created file `index.ejs` complete the following:
 
-- [ ] Include `header.ejs` **Hint: <%- %>**
-- [ ] Add a `div` element with a class of `container`.
-- [ ] In the container div display the value of the `title` key in an `h1` element. **Hint: <%= %>**
-- [ ] Add an anchor element below the `h1` that points to the `/profile` URL path, and has the text content `Profile`.
-- [ ] Below the container div add a line break and another anchor element that points to the `/transfer` URL path with the text content `Transfer`.
-- [ ] Include `footer.ejs` **Hint: <%- %>**
+- [x] Include `header.ejs` **Hint: <%- %>**
+- [x] Add a `div` element with a class of `container`.
+- [x] In the container div display the value of the `title` key in an `h1` element. **Hint: <%= %>**
+- [x] Add an anchor element below the `h1` that points to the `/profile` URL path, and has the text content `Profile`.
+- [x] Below the container div add a line break and another anchor element that points to the `/transfer` URL path with the text content `Transfer`.
+- [x] Include `footer.ejs` **Hint: <%- %>**
 
 ## 1.7 - Create the Index Route
 
