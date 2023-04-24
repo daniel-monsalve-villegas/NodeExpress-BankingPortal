@@ -35,10 +35,10 @@ In order to see your changes in a browser, you can run `npm start` to start the 
 
 ## 1.4 - Configure the Static Directory
 
-- [ ] @app-use-express-static All of our CSS/JS for the client-side is found in the `public` directory. We need to point express to `public`.
+- [x] @app-use-express-static All of our CSS/JS for the client-side is found in the `public` directory. We need to point express to `public`.
 
-- [ ] In app.js call the `use` function of `app` with a call to the `express.static()` function as the only parameter.
-- [ ] `express.static()` should be passed the full path to the `public` directory. **Hint: `path.join()` & `__dirname`**
+- [x] In app.js call the `use` function of `app` with a call to the `express.static()` function as the only parameter.
+- [x] `express.static()` should be passed the full path to the `public` directory. **Hint: `path.join()` & `__dirname`**
 
 ## 1.5 - Create the Index View File
 
@@ -151,7 +151,7 @@ We have several values that have been entered into the HTML form in `transfer.ej
 
 @app-post-transfer-route-to-balance Still in `app.js` and in the function body of the post route we are going to calculate the new balances for the account we are transferring to.
 
-We have several values that have been entered into the HTML form in `transfer.ejs`. Upon form submission the request body will contain `from`, `to`, and `amount`. Current account balances are stored in the `accounts` object. As an example to access the current balance for the savings account use `accounts["savings"].balance`. 
+We have several values that have been entered into the HTML form in `transfer.ejs`. Upon form submission the request body will contain `from`, `to`, and `amount`. Current account balances are stored in the `accounts` object. As an example to access the current balance for the savings account use `accounts["savings"].balance`.
 
 - Add the amount entered to the account selected (req.body.to) and save it back to back to the accounts object, remember to use `parseInt()` on both values when adding.
 
@@ -238,7 +238,7 @@ Notes:
 
 ## 5.2 - Require Express - Accounts
 
-@routes-accounts-js-require-express In the new `accounts.js` require the express framework and store a reference to it in a `const` called `express`.  Next, call the `express.Router()` function and store it in a `const` called `router`.
+@routes-accounts-js-require-express In the new `accounts.js` require the express framework and store a reference to it in a `const` called `express`. Next, call the `express.Router()` function and store it in a `const` called `router`.
 
 ## 5.3 - Require Data Library - Accounts
 
@@ -258,7 +258,7 @@ Notes:
 
 ## 5.7 - Require Express - Services
 
-@routes-services-js-require-express In the new `services.js` require the express framework and store a reference to it in a `const` called `express`.  Next, call the `express.Router()` function and store it in a `const` called `router`.
+@routes-services-js-require-express In the new `services.js` require the express framework and store a reference to it in a `const` called `express`. Next, call the `express.Router()` function and store it in a `const` called `router`.
 
 ## 5.8 - Require Data Library - Services
 
