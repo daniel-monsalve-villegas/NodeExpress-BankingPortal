@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const express = require('express');
-const { accounts, users, writeJSON } = require('./data');
+const accountRoutes = require('./routes/accounts');
 
 const app = express();
 
@@ -17,8 +17,6 @@ app.get('/', function (req, res) {
 app.get('/profile', function (req, res) {
   res.render('profile', { user: users[0] });
 });
-
-
 
 app.listen(3000, function () {
   console.log('PS Project Running on port 3000!');
