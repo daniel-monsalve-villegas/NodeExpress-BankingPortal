@@ -3,6 +3,13 @@
   <h1>Profile</h1>
 
   <div>
+    <% for(let i = 0; i < user.length; i++) { %>
+      <p><% user.name %></p>
+      <p><% user.username %></p>
+      <p><% user.phone %></p>
+      <p><% user.email %></p>
+      <p><% user.address %></p>
+    <% } %>
   </div>
   <br> <a href="/">Back to Account Summary</a>
 
