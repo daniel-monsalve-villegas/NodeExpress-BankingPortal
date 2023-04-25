@@ -24,11 +24,11 @@ app.get('/savings', function (req, res) {
 });
 
 app.get('/checking', function (req, res) {
-  res.render('account', { account: accounts.savings });
+  res.render('account', { account: accounts.checking });
 });
 
 app.get('/credit', function (req, res) {
-  res.render('account', { account: accounts.savings });
+  res.render('account', { account: accounts.credit });
 });
 
 app.get('/profile', function (req, res) {
@@ -40,7 +40,17 @@ app
     res.render('render');
   })
   .post('/transfer', function (req, res) {
-    accounts['savings'].balance;
+    accounts[req.body.from].balance =
+      accounts[req.body.from].balance - req.body.amount;
+    accounts[req.body.to].balance =
+      parseInt(accounts[req.body.to].balance) + parseInt(req.body.amount, 10);
+    const accounstJSON = JSON.stringify(accounts, null, 4);
+    fs.writeFileSync(
+      path.join(__dirname, 'json/accounts.json'),
+      accounstJSON,
+      'utf8'
+    );
+    res.render('transfer', { message: 'Transfer Completed' });
   });
 
 app.listen(3000, function () {
