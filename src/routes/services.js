@@ -29,3 +29,5 @@ router
       account: accounts.credit,
     });
   });
+
+module.exports = router;
