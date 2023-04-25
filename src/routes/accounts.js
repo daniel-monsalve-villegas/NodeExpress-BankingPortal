@@ -1,6 +1,5 @@
 const express = require('express');
 const { accounts } = require('../data');
-const { modulo } = require('ramda');
 
 const router = express.Router();
 
