@@ -82,13 +82,13 @@ In order to see your changes in a browser, you can run `npm start` to start the 
 
 ## 2.5 - Create the Savings Account Route
 
-- [ ] @app-get-savings-account-route In `app.js` near the index route, create a `get` route that points at the `/savings` URL path. Render the `account` view and pass an object with the following key value pair:
+- [x] @app-get-savings-account-route In `app.js` near the index route, create a `get` route that points at the `/savings` URL path. Render the `account` view and pass an object with the following key value pair:
 
 - `account: accounts.savings`
 
 ## 2.6 - Create the Checking & Credit Routes
 
-- [ ] @app-get-other-account-routes Now that you have created the savings account route, create similar routes for the checking and credit accounts in the `app.js` file.
+- [x] @app-get-other-account-routes Now that you have created the savings account route, create similar routes for the checking and credit accounts in the `app.js` file.
 
 ## 2.7 - Show Account Transactions
 
