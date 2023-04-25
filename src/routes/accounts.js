@@ -1,5 +1,6 @@
 const express = require('express');
 const { accounts } = require('../data');
+const { modulo } = require('ramda');
 
 const router = express.Router();
 
@@ -14,3 +15,5 @@ router.get('/checking', function (req, res) {
 router.get('/credit', function (req, res) {
   res.render('account', { account: accounts.credit });
 });
+
+module.exports = router;
