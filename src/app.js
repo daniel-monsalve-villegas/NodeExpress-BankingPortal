@@ -58,13 +58,16 @@ app
     res.render('payment', { account: accounts.credit });
   })
   .post('/payment', function (req, res) {
-    accounts.credit.balance = accounts.credit.balance - req.body.amount;
-    accounts.credit.available =
-      parseInt(accounts.credit.balance) + parseInt(req.body.amount);
+    accounts.credit.balance -= req.body.amount;
+    accounts.credit.available += parseInt(req.body.amount);
     const accountsJSON = JSON.stringify(accounts, null, 4);
-    fs.writeFileSync(accountsJSON, 'utf8');
+    fs.writeFileSync(
+      path.join(__dirname, 'json', 'accounts.json'),
+      accountsJSON,
+      'utf8'
+    );
     res.render('payment', {
-      message: 'PAyment Successful',
+      message: 'Payment Successful',
       account: accounts.credit,
     });
   });
