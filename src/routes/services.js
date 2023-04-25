@@ -5,7 +5,7 @@ const router = express.Router();
 
 router
   .get('/transfer', function (req, res) {
-    res.render('render');
+    res.render('transfer');
   })
   .post('/transfer', function (req, res) {
     accounts[req.body.from].balance =

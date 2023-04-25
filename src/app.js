@@ -3,9 +3,7 @@ const path = require('path');
 const express = require('express');
 const accountRoutes = require('./routes/accounts');
 const servicesRoutes = require('./routes/services');
-
-const accountData = fs.readFileSync('src/json/accounts.json', 'utf8');
-const accounts = JSON.parse(accountData);
+const { accounts, users } = require('./data');
 
 const app = express();
 
