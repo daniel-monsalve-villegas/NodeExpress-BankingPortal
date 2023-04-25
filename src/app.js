@@ -22,6 +22,13 @@ app.get('/savings', function (req, res) {
   res.render('account', { account: accounts.savings });
 });
 
+app.get('/checking', function (req, res) {
+  res.render('account', { account: accounts.savings });
+});
+
+app.get('/credit', function (req, res) {
+  res.render('account', { account: accounts.savings });
+});
 app.listen(3000, function () {
   console.log('PS Project Running on port 3000!');
 });
