@@ -7,6 +7,7 @@ const app = express();
 app.set('views', path.join(__dirname, '/views'));
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.urlencoded({ extended: true }));
 
 const accountData = fs.readFileSync('src/json/accounts.json', 'utf8');
 const accounts = JSON.parse(accountData);
@@ -33,6 +34,14 @@ app.get('/credit', function (req, res) {
 app.get('/profile', function (req, res) {
   res.render('profile', { user: users[0] });
 });
+
+app
+  .get('/transfer', function (req, res) {
+    res.render('render');
+  })
+  .post('/transfer', function (req, res) {
+    accounts['savings'].balance;
+  });
 
 app.listen(3000, function () {
   console.log('PS Project Running on port 3000!');
