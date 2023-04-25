@@ -53,6 +53,22 @@ app
     res.render('transfer', { message: 'Transfer Completed' });
   });
 
+app
+  .get('/payment', function (req, res) {
+    res.render('payment', { account: accounts.credit });
+  })
+  .post('/payment', function (req, res) {
+    accounts.credit.balance = accounts.credit.balance - req.body.amount;
+    accounts.credit.available =
+      parseInt(accounts.credit.balance) + parseInt(req.body.amount);
+    const accountsJSON = JSON.stringify(accounts, null, 4);
+    fs.writeFileSync(accountsJSON, 'utf8');
+    res.render('payment', {
+      message: 'PAyment Successful',
+      account: accounts.credit,
+    });
+  });
+
 app.listen(3000, function () {
   console.log('PS Project Running on port 3000!');
 });
