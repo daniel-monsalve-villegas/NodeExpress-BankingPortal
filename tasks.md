@@ -92,27 +92,27 @@ In order to see your changes in a browser, you can run `npm start` to start the 
 
 ## 2.7 - Show Account Transactions
 
-- [ ] @account-ejs-show-transactions In `account.ejs` after the header markup, add the ejs markup to include the `transactions` view. Pass the include function an object with the following key value pair:
+- [x] @account-ejs-show-transactions In `account.ejs` after the header markup, add the ejs markup to include the `transactions` view. Pass the include function an object with the following key value pair:
 
 - `account: account`
 
 ## 2.8 - Create the Profile View File
 
-- [ ] @profile-ejs-create-view-file Create a new file called `profile.ejs` in the `src/views/` directory.
+- [x] @profile-ejs-create-view-file Create a new file called `profile.ejs` in the `src/views/` directory.
 
 ## 2.9 - Create the Profile View
 
-- [ ] @profile-ejs-create-view In the newly created file `profile.ejs` complete the following:
+- [x] @profile-ejs-create-view In the newly created file `profile.ejs` complete the following:
 
-- Include `header.ejs` **Hint: <%- %>**
-- Add an `h1` element with the text content `Profile`
-- Add a `div` element below the `h1` that displays each detail of the `user` object (passed to the view in the next step) on a new line. The details are user.name, user.username, user.phone, user.email, and user.address.
-- Below the `div` add a line break, then an anchor element that points to the root URL path and has the text content `Back to Account Summary`.
-- Include `footer.ejs` **Hint: <%- %>**
+- [x] Include `header.ejs` **Hint: <%- %>**
+- [x] Add an `h1` element with the text content `Profile`
+- [x] Add a `div` element below the `h1` that displays each detail of the `user` object (passed to the view in the next step) on a new line. The details are user.name, user.username, user.phone, user.email, and user.address.
+- [x] Below the `div` add a line break, then an anchor element that points to the root URL path and has the text content `Back to Account Summary`.
+- [x] Include `footer.ejs` **Hint: <%- %>**
 
 ## 2.10 - Create the Profile Route
 
-@app-get-profile-route Back In `app.js` below the account get routes create a `get` route that points at the `/profile` URL path. Render the `profile` view and pass an object with the following key value pair:
+- [x] @app-get-profile-route Back In `app.js` below the account get routes create a `get` route that points at the `/profile` URL path. Render the `profile` view and pass an object with the following key value pair:
 
 - `user: users[0]`
 
