@@ -14,18 +14,6 @@ app.get('/', function (req, res) {
   res.render('index', { title: 'Account Summary', accounts: accounts });
 });
 
-app.get('/savings', function (req, res) {
-  res.render('account', { account: accounts.savings });
-});
-
-app.get('/checking', function (req, res) {
-  res.render('account', { account: accounts.checking });
-});
-
-app.get('/credit', function (req, res) {
-  res.render('account', { account: accounts.credit });
-});
-
 app.get('/profile', function (req, res) {
   res.render('profile', { user: users[0] });
 });
