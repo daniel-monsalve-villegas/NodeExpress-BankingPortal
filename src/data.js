@@ -15,3 +15,5 @@ const writeJSON = () => {
     'utf8'
   );
 };
+
+module.exports = { accounts, users, writeJSON };
